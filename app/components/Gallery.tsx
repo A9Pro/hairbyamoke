@@ -88,8 +88,8 @@ export default function Gallery() {
           <p style={{ fontFamily:"'Jost',sans-serif", fontSize:"10px", letterSpacing:"0.28em", textTransform:"uppercase", color:"rgba(212,196,160,0.36)", marginBottom:"16px" }}>
             See more on Instagram
           </p>
-          <a href="https://instagram.com/hairbyamoke" target="_blank" rel="noopener noreferrer" className="btn-outline">
-            @hairbyamoke
+          <a href="https://instagram.com/hairbyamokee" target="_blank" rel="noopener noreferrer" className="btn-outline">
+            @hairbyamokee
           </a>
         </div>
       </div>
