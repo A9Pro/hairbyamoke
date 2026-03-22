@@ -13,7 +13,7 @@ export default function Footer() {
             ))}
           </nav>
           <div style={{ display:"flex", gap:"8px" }}>
-            {[{ l:"IG", h:"https://instagram.com/hairbyamokee" }, { l:"TIK", h:"https://instagram.com/hairbyamokee" }, { l:"WA", h:"https://wa.me/2349160830435" }].map(s => (
+            {[{ l:"IG", h:"https://instagram.com/hairbyamokee" }, { l:"TIK", h:"https://tiktok.com/hairbyamokee" }, { l:"WA", h:"https://wa.me/2349160830435" }].map(s => (
               <a key={s.l} href={s.h} target="_blank" rel="noopener noreferrer"
                 style={{ width:"34px", height:"34px", border:"1px solid rgba(201,168,76,0.22)", display:"flex", alignItems:"center", justifyContent:"center", color:"var(--gold)", fontSize:"10px", letterSpacing:"0.04em", textDecoration:"none", transition:"all 0.3s" }}>
                 {s.l}
