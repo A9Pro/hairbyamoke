@@ -25,31 +25,31 @@ export const metadata: Metadata = {
     title:       "Hair by Amoke",
     description: "Luxury hair artistry in Lagos, Nigeria.",
   },
-  robots: {
-    index:  true,
-    follow: true,
-  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        {/* Preconnect reduces font load latency significantly */}
+        {/* ── Fonts ── */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* Single combined request — 1 network call for both fonts */}
         <link
           href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap"
           rel="stylesheet"
         />
-        {/* DNS prefetch for external links */}
+        {/* ── Preload hero image — biggest LCP element ── */}
+        <link rel="preload" as="image" href="/images/hero-bg.jpg" fetchPriority="high" />
+
+        {/* ── DNS prefetch for external services ── */}
         <link rel="dns-prefetch" href="https://wa.me" />
         <link rel="dns-prefetch" href="https://instagram.com" />
+
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#080808" />
       </head>
-      <body style={{ margin: 0, padding: 0 }}>
+      <body style={{ margin:0, padding:0 }}>
         <CustomCursor />
         {children}
       </body>
